@@ -12,7 +12,9 @@
 
   <body>
     <header>
-      <img src="img/y18.gif" id="logo">
+      <div id="logo-container">
+        <img src="img/y18.gif" id="logo">
+      </div>
       <div id="title-and-nav">
         <h1>Hacker News</h1>
         <nav>

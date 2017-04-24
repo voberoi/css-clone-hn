@@ -22,35 +22,44 @@ HEADER
 **********/
 
 header {
-    padding: 2px 0;
-    height: 38px;
+    display: table;
+    border-spacing: 10px 0;
+    padding: 6px 0;
     width: 100%;
+    box-sizing: border-box;
+    
 }
 
 #logo {
-    float: left;
+    display: block;
     border: 1px solid #fff;
-    margin: 10px 10px 10px 2px;
+}
+
+#logo-container {
+    display: table-cell;
+    vertical-align: middle;
+    width: 20px;
 }
 
 #title-and-nav {
-    display:inline-block;
+    display:table-cell;
+    vertical-align: middle;
 }
 
 header h1 {
-    margin: 3.5px 0 0 0;
-    padding: 0;
+    margin: 0;
     font-size: 1.14em;
 }
 
 header nav {
-    margin: 0 0 3.5px 0;
+    margin: 0;
 }
 
 #login-link {
-    margin: 12px 12px 12px 0;
+    display: table-cell;
     font-size: 0.9em;
-    float: right;
+    text-align: right;
+    vertical-align: middle;
 }
 
 header a:hover {
