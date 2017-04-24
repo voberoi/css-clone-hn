@@ -63,12 +63,22 @@
     main li.post span.post-domain {
         font-size: 0.8em;
     }
+
     footer form#search {
+        display: table;        
         width: 40%;
         margin: 0 auto;
+        border-spacing: 5px 0;
+        box-sizing: content-box;
     }
 
+    footer form#search label {
+        display: table-cell;
+        width: 1px;
+    }
+    
     footer form#search input {
+        display: table-cell;        
         line-height: 1.5em;
     }
 }

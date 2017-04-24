@@ -184,19 +184,19 @@ footer nav li {
 }
 
 footer form#search {
-    display: table;
     width: 99%;
-    padding: 0 0.5%;
-    border-spacing: 5px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 footer form#search label {
-    display: table-cell;
-    width: 1px;
+    display: block;
+    width: 100%;
+    text-align: center;
 }
 
 footer form#search input {
-    display: table-cell;
+    display: block;
     width: 100%;
     line-height: 1.8em;
 }
