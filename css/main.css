@@ -1,0 +1,258 @@
+/*********
+GENERAL
+**********/
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10pt;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*********
+HEADER
+**********/
+
+header {
+    padding: 2px 0;
+    height: 38px;
+    width: 100%;
+}
+
+#logo {
+    float: left;
+    border: 1px solid #fff;
+    margin: 10px 10px 10px 2px;
+}
+
+#title-and-nav {
+    display:inline-block;
+}
+
+header h1 {
+    margin: 3.5px 0 0 0;
+    padding: 0;
+    font-size: 1.14em;
+}
+
+header nav {
+    margin: 0 0 3.5px 0;
+}
+
+#login-link {
+    margin: 12px 12px 12px 0;
+    font-size: 0.9em;
+    float: right;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+/*********
+HEADER NAV
+**********/
+
+header nav {
+    font-size: 0.9em;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    display: inline-block;
+}
+
+/*********
+ MAIN
+**********/
+
+main {
+    padding: 10px 0;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+main ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+main li.post {
+    display: table;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+main li.post div.post-rank {
+    display: table-cell;
+    text-align: right;
+    width: 25px;
+}
+
+main li.post div.vote-arrow-link {
+    display: table-cell;
+    width: 13px;
+}
+
+main li.post img.vote-arrow {
+    height: 13px;
+    width: 13px;
+    margin-right: 5px;
+}
+
+main li.post div.post-details {
+    display: table-cell;
+}
+
+main li.post p.post-title-and-domain {
+    margin: 0 0 5px 0;
+}
+main li.post a.post-title {
+    text-decoration: none;
+}
+
+main li.post span.post-domain {
+    font-size: 0.7em;
+}
+
+main li.post p.post-footer {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+main #more-link {
+    display: block;
+    margin-top: 15px;
+    margin-left: 43px;
+    text-decoration: none;
+}
+
+/*********
+ FOOTER
+**********/
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+    border-top: 2px solid #ff6600;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer nav {
+    width: 100%;
+    font-size: 0.8em;
+    margin: 0 0 15px 0;
+}
+
+footer nav ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav li {
+    display: inline-block;
+}
+
+footer form#search {
+    display: table;
+    width: 99%;
+    padding: 0 0.5%;
+    border-spacing: 5px 0;
+}
+
+footer form#search label {
+    display: table-cell;
+    width: 1px;
+}
+
+footer form#search input {
+    display: table-cell;
+    width: 100%;
+    line-height: 1.8em;
+}
+
+
+/*********
+ COLORS 
+**********/
+
+header {
+    background: #ff6600;
+}
+
+main, footer {
+    background: #f6f6ef;
+    color: #828282;
+}
+
+footer a {
+    color: #000;
+}
+
+footer a:visited {
+    color: #828282;
+}
+
+header a, header a:visited {
+    color: #000;
+}
+
+li.post .post-rank {
+    color: #828282;
+}
+
+li.post a.post-title {
+    color: #000;
+}
+
+li.post a.post-title:visited {
+    color: #828282;
+}
+
+
+li.post .post-domain, li.post .post-domain a, li.post .post-domain a:visited {
+    color: #828282;
+}
+
+li.post .post-footer {
+    color: #828282;
+}
+
+li.post .post-footer a, li post .post-footer a:visited {
+    color: #828282;
+}
+
+#more-link {
+    color: #000;
+}
+
+#more-link:visited {
+    color: #828282;
+}
+
+footer form#search label {
+    color: #828282;
+}
+
+

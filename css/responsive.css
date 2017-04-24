@@ -1,0 +1,25 @@
+@media screen and (min-width: 750px) {
+    body {
+        margin: 8px auto;
+        width: 85%;
+    }
+
+    header {
+        padding: 2px 0;
+        height: 20px;
+    }
+
+    header h1 {
+        display: inline;
+    }
+
+    header nav {
+        display: inline;
+    }
+
+    #title-and-nav {
+        display:inline-block;
+        max-width:100%;
+    }
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hacker News</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header>
+      <img src="img/y18.gif" id="logo">
+      <div id="title-and-nav">
+        <h1>Hacker News</h1>
+        <nav>
+          <ul>
+            <li><a href="">new</a></li>
+            |
+            <li><a href="">comments</a></li>
+            |
+            <li><a href="">show</a></li>
+            |
+            <li><a href="">ask</a></li>
+            |
+            <li><a href="">jobs</a></li>
+            |
+            <li><a href="">submit</a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="" id="login-link">login</a>
+    </header>
+
+    <main>
+      <ul>
+
+        {% for post in posts %}
+        <li class="post">
+          <div class="post-rank">{{post.rank}}.</div>
+          <div class="vote-arrow-link">
+            <a href=""><img src="img/grayarrow2x.gif" class="vote-arrow"></a>
+          </div>
+          <div class="post-details">
+            <p class="post-title-and-domain"><a href="{{post.url}}" class="post-title">{{post.title}}</a> <span class="post-domain">(<a href="">{{post.domain}}</a>)</span></p>
+            <p class="post-footer">{{post.votes}} points by <a href="">{{post.author}}</a> <a href="">{{post.time_ago}}</a> | <a href="">hide</a> | <a href="">{{post.comments}} comments</a></p>
+          </div>
+        </li>
+
+        {% endfor %}
+
+      </ul>
+
+      <a id="more-link" href="">More</a>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="">Guidelines</a></li>
+          |
+          <li><a href="">FAQ</a></li>
+          |
+          <li><a href="">Support</a></li>
+          |
+          <li><a href="">API</a></li>
+          |
+          <li><a href="">Security</a></li>
+          |
+          <li><a href="">Lists</a></li>
+          |
+          <li><a href="">Bookmarklet</a></li>
+          |
+          <li><a href="">DMCA</a></li>
+          |
+          <li><a href="">Apply to YC</a></li>
+          |
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+
+      <form id="search">
+        <label for="search">Search:</label>
+        <input type="text"></input>
+      </form>
+    </footer>
+  </body>
+</html>
